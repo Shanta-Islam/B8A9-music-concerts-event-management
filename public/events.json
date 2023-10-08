@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/KLNW9RC/img1.jpg",
+        "title": "Venue Management",
+        "desc": "Choosing the correct event venue is a critical choice that may have a significant influence on the outcome of the gathering. Here are some crucial elements to consider before making an educated decision. Your event's setting should be consistent with its aim and concept. The ambiance and facilities of the site should suit your aims, whether it's a corporate meeting, wedding, or social event.",
+        "price": 5000
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/DwFyczs/img2.jpg",
+        "title": "Crowd Management",
+        "desc": "Crowd control can be a make-or-break component of events, including concerts, outdoor festivals, and professional sports events. Done right, and the risks associated with crowd-related injuries and property damage drops. Done poorly, the lack of effective crowd control can lead to injury, damage, or even death. So we ensure the safety of those at an event, from the guests to the staff, and the performers.",
+        "price": 4000
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/sCN1jB1/img3.jpg",
+        "title": "Special Entry for Guests",
+        "desc": "Special entry for guests ensure that guest security and special seating or standing areas, which can provide a better view or experience of the concert.",
+        "price": 5000
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/0F1GY1r/img4.jpg",
+        "title": "Hotel Booking For Guests",
+        "desc": "To ensure a safe and secure place for stay before and after concert. Treating guests like family improves the overall guest experience. It helps make their stay much more satisfactory and comfortable.",
+        "price": 3000
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/7GtFzFr/img5.jpg",
+        "title": "Audio and Visual arrangement",
+        "desc": " Audio & video both play an equal role in entertainment services. It's important to consider how people with different access needs will use media content.",
+        "price": 3000
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/Qf9PNTh/img6.jpg",
+        "title": "Branding and Marketing",
+        "desc": "No one will know about a perfect venue or event space if it isn’t being marketed correctly. Venue managers are often in charge of spreading the word about their venue and events through different marketing channels, like social media or local advertising.",
+        "price": 7000
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/z8xdqz0/img7.png",
+        "title": "Stage fabrication",
+        "desc": "Stage Fabrication is an essential part of event planning, especially when it comes to creating a memorable experience for the audience. Stage fabrication involves the design and construction of stages for events such as concerts, corporate events, weddings, and more. It involves the use of specialized materials and techniques to create a stage that not only looks visually appealing but is also safe and sturdy.",
+        "price": 10000
+    }
+]

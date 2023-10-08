@@ -4,7 +4,7 @@ import EventServices from "./EventServices";
 
 const Home = () => {
     return (
-        <div className="py-20">
+        <div>
             <Banner></Banner>
             <EventServices></EventServices>
         </div>

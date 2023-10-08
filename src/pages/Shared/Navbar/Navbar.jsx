@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider";
 
 const Navbar = () => {
-    const {user, logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
     const handleSignOut = () => {
         logOut()
             .then()
@@ -11,16 +11,18 @@ const Navbar = () => {
     }
     const links = <>
         <li><NavLink to="/" className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] hover:text-[#FF444A] focus:text-[#FF444A] bg-transparent underline" : ""}>Home</NavLink></li>
-        <li><NavLink to="/donation" className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] hover:text-[#FF444A] focus:text-[#FF444A]  bg-transparent underline" : ""}>Donation</NavLink></li>
-       {
-        user ?
-        <li onClick={handleSignOut}><NavLink>SignOut</NavLink></li>
-        :
-        <li><NavLink to="/login" className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-[#FF444A] hover:text-[#FF444A] focus:text-[#FF444A]  bg-transparent underline" : ""}>Login</NavLink></li>
-       }
+            isPending ? "pending" : isActive ? "text-white hover:text-white focus:text-white bg-transparent underline" : ""}>Home</NavLink></li>
+        <li><NavLink to="/about" className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-white hover:text-white focus:text-white  bg-transparent underline" : ""}>About Us</NavLink></li>
+        <li><NavLink to="/blog" className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-white hover:text-white focus:text-white bg-transparent underline" : ""}>Blog</NavLink></li>
+        {
+            user ?
+                <li onClick={handleSignOut}><NavLink>SignOut</NavLink></li>
+                :
+                <li><NavLink to="/login" className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#FF444A] hover:text-[#FF444A] focus:text-[#FF444A]  bg-transparent underline" : ""}>Login</NavLink></li>
+        }
     </>
     return (
         <div className="navbar bg-base-100 fixed z-20 px-10">

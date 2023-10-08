@@ -53,7 +53,7 @@ const Register = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Register</button>
+                    <button className="btn">Register</button>
                 </div>
             </form>
             <p className="text-center mt-4">Already have an account ? <Link to="/login">Login</Link></p>
