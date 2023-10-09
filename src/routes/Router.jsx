@@ -7,11 +7,13 @@ import About from "../pages/About/About";
 import Blog from "../pages/Blog/Blog";
 import EventServiceDetails from "../pages/EventServiceDetails/EventServiceDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

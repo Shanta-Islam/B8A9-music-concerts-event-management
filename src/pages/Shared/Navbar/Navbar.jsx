@@ -18,6 +18,22 @@ const Navbar = () => {
             isPending ? "pending" : isActive ? "text-white hover:text-white focus:text-white bg-transparent underline" : ""}>Blog</NavLink></li>
         {
             user ?
+                // <div className="dropdown dropdown-end">
+                //     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                //         <div className="w-8 rounded-full">
+                //             <img src={user?.photoURL ? user?.photoURL : 'https://i.ibb.co/X2xMzwL/defultuser.png'} />
+                //         </div>
+                //     </label>
+                //     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                //         <li>
+                //             <a className="justify-between">
+                //                 Profile
+                //             </a>
+                //         </li>
+                //         <li><a>Settings</a></li>
+                //         <li onClick={handleSignOut}><a>SignOut</a></li>
+                //     </ul>
+                // </div>
                 <li onClick={handleSignOut}><NavLink>SignOut</NavLink></li>
                 :
                 <li><NavLink to="/login" className={({ isActive, isPending }) =>
