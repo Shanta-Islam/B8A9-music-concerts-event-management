@@ -16,12 +16,17 @@ const Login = () => {
         const password = form.get("password");
         signIn(email, password)
             .then(result => {
-                console.log(result.user);
+                if(email !== result.user.email){
+                    toast.error("email does't match")
+                }
+                else if(password !== result.user.password){
+                    toast.error("password doesn't match");
+                }
                 toast.success('Successfully Sign In')
                 navigate(location?.state ? location.state : '/');
             })
             .then(error => {
-                console.error(error)
+                toast.error(error.message)
             })
     }
     const handleGoogleSignIn = () => {
