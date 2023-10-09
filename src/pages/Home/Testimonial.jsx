@@ -1,7 +1,13 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Testimonial = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
-        <div className="mt-10">
+        <div className="mt-10" data-aos="fade-up">
             <h2 className="text-2xl font-bold tracking-tight text-center">
                 Read trusted reviews from our customers
             </h2>

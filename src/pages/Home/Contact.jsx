@@ -1,7 +1,13 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
-        <div>
+        <div data-aos="fade-up">
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
