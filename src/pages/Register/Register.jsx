@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
-import { GoogleAuthProvider } from "firebase/auth";
+import { GoogleAuthProvider, updateProfile } from "firebase/auth";
 
 const Register = () => {
-    const { providerLogin, createUser } = useContext(AuthContext);
+    const { providerLogin, createUser, updateUserProfile, setLoading } = useContext(AuthContext);
 
     const googleProvider = new GoogleAuthProvider();
     const handleRegister = e => {
@@ -31,7 +31,9 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                
                 toast.success('Successfully Sign Up')
+                handleUpdateUserProfile(name, photo);
             })
             .catch(error => {
                 console.error(error)
@@ -43,6 +45,20 @@ const Register = () => {
                 toast.success('Successfully Sign Up')
             })
             .catch(error => console.log(error));
+    }
+    const handleUpdateUserProfile = (name, photo) => {
+        const profile = {
+            displayName: name,
+            photoURL: photo
+        }
+        updateUserProfile(profile)
+            .then(() => {
+                setLoading(false)
+                toast.success('Profile Updated');
+            })
+            .catch(error => {
+                toast.error(error);
+            });
     }
     return (
         <div className="py-20 mx-auto">
